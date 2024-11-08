@@ -1,11 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-app.use(cors({ origin: 'https://bitmasters52.online' }));
 require('dotenv').config();
-
 const app = express();
-app.use(cors());
+app.use(cors({ origin: 'https://bitmasters52.online' }));
+
+
 app.use(express.json());
 
 // Connect to MongoDB
